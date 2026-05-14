@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GlowNest Candles</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      color:white;
+      background:#111;
+    }
+
+    /* HEADER */
+
+    header{
+      position:fixed;
+      width:100%;
+      top:0;
+      z-index:1000;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+
+      padding:0px 4%;
+
+      background:rgba(0,0,0,0.6);
+      backdrop-filter:blur(6px);
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#ffd6b0;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ffd6b0;
+    }
+
+    /* HOME */
+
+    #home{
+      height:100vh;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('slider1.jpg');
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+
+      padding:20px;
+    }
+
+    .home-content h1{
+      font-size:65px;
+      margin-bottom:20px;
+    }
+
+    .home-content p{
+      font-size:22px;
+      margin-bottom:30px;
+      color:#eee;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 35px;
+      background:#ffd6b0;
+      color:black;
+      text-decoration:none;
+      border-radius:40px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+      transform:scale(1.05);
+    }
+
+    /* SECTIONS */
+
+    section{
+      padding:100px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:45px;
+      margin-bottom:50px;
+      color:#ffd6b0;
+    }
+
+    /* ABOUT */
+
+    .about-content{
+      max-width:800px;
+      margin:auto;
+      text-align:center;
+      line-height:1.8;
+      color:#ddd;
+      font-size:18px;
+    }
+
+    /* PRODUCTS */
+
+    .product-container{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:30px;
+    }
+
+    .card{
+      width:280px;
+      background:#1b1b1b;
+      border-radius:20px;
+      overflow:hidden;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+      text-align:center;
+    }
+
+    .card h3{
+      margin-bottom:10px;
+    }
+
+    .price{
+      color:#ffd6b0;
+      font-size:22px;
+      margin-bottom:15px;
+      font-weight:bold;
+    }
+
+    /* CONTACT */
+
+    .contact-box{
+      max-width:600px;
+      margin:auto;
+      text-align:center;
+      line-height:2;
+      font-size:20px;
+      color:#ddd;
+    }
+
+    /* FOOTER */
+
+    footer{
+      text-align:center;
+      padding:25px;
+      background:black;
+      color:#aaa;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      .home-content h1{
+        font-size:40px;
+      }
+
+      .home-content p{
+        font-size:18px;
+      }
+
+      nav{
+        display:none;
+      }
+
+    }
+
+    p a{
+      color: #fff;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="logo"><img src="logo2.png" height="120px" width="280px"></div>
+
+    <nav>
+
+      <a href="#home">Home</a>
+
+      <a href="#about">About</a>
+
+      <a href="#products">Products</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+  </header>
+
+  <!-- HOME -->
+
+  <section id="home">
+
+    <div class="home-content">
+
+      <h1>Luxury Handmade Candles ✨</h1>
+
+      <p>
+        Beautiful scented candles made with love
+        for gifts, home decor & peaceful vibes.
+      </p>
+
+      <a href="#products" class="btn">Shop Now</a>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <h2 class="section-title">About Us</h2>
+
+    <div class="about-content">
+
+      <p>
+        GlowNest Candles creates premium handmade candles
+        with elegant fragrance and aesthetic designs.
+        Our candles are perfect for birthdays, festivals,
+        gifts and home decoration.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- PRODUCTS -->
+
+  <section id="products">
+
+    <h2 class="section-title">Our Products</h2>
+
+    <div class="product-container">
+
+      <div class="card">
+
+        <img src="rose.jpeg">
+
+        <div class="card-content">
+
+          <h3>Tulip Bloom Candle</h3>
+
+          <p class="price">₹100</p>
+
+          <a href="#" class="btn">Buy</a>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="buke.jpeg">
+
+        <div class="card-content">
+
+          <h3>Daisy Bouquet Candle</h3>
+
+          <p class="price">₹60</p>
+
+          <a href="#" class="btn">Buy</a>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="heart.jpeg">
+
+        <div class="card-content">
+
+          <h3>Heart Candle Set (6 piece)</h3>
+
+          <p class="price">₹90</p>
+
+          <a href="#" class="btn">Buy</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-box">
+
+      <p>📍 Mumbai, India</p>
+
+      <!-- <p> +91 9022562090</p> -->
+
+      <p style="color: #fff;">📞 <a href="tel:+919022562090">+91 9022562090</a></p>
+
+      <!-- <p>📧 glownestcandles@gmail.com</p> -->
+
+      <p>Meesho : <a href="https://meesho.com/graceful-candles/p/fjyrxj?_ms=1.2"> Click Here</a></p>
+      <!-- <p>📸 Instagram: @glownestcandles</p> -->
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 GlowNest Candles | All Rights Reserved
+    </p>
+
+  </footer>
+
+</body>
+</html>
